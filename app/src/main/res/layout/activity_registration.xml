@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:background="@color/background"
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true" >
+
+        <LinearLayout android:id="@+id/scroll_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <EditText
+                android:id="@+id/reg_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:drawableEnd="@drawable/mobile"
+                android:layout_margin="10dp"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white"
+                android:hint="Enter Mobile Number"
+                android:inputType="phone"
+                android:importantForAutofill="no" />
+
+            <EditText
+                android:hint="Enter Your Name"
+                android:textColorHint="@android:color/white"
+                android:id="@+id/reg_name"
+                android:layout_width="match_parent"
+                android:drawableRight="@drawable/user"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:inputType="textCapWords"
+                android:textColor="@android:color/white"
+                android:ems="10"/>
+
+            <EditText
+                android:hint="Enter Your Address"
+                android:drawableRight="@drawable/address"
+                android:textColorHint="@android:color/white"
+                android:id="@+id/reg_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textColor="@android:color/white"
+                android:ems="10"
+                android:inputType="text" />
+
+            <EditText
+                android:hint="Enter Password"
+                android:textColorHint="@android:color/white"
+                android:id="@+id/reg_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/password"
+                android:layout_margin="10dp"
+                android:textColor="@android:color/white"
+                android:ems="10"
+                android:inputType="textPassword" />
+
+            <EditText
+                android:hint="Confirm Password"
+                android:textColorHint="@android:color/white"
+                android:id="@+id/reg_password_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/password"
+                android:layout_margin="10dp"
+                android:textColor="@android:color/white"
+                android:ems="10"
+                android:inputType="textPassword" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sign Up"
+                android:id="@+id/signup_reg_btn"
+                android:textSize="22sp"
+                android:gravity="center"
+                android:layout_marginRight="80dp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="40dp"
+                android:padding="10dp"
+                android:background="@color/login_background"
+                android:textColor="@android:color/white"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

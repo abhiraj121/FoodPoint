@@ -1,0 +1,39 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:background="@color/background">
+
+    <TextView
+        android:id="@+id/order_name"
+        android:background="@color/background"
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:text="Item Name"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/order_quantity"
+        android:background="@color/background"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:text="Qty"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:gravity="end"
+        android:id="@+id/order_price"
+        android:background="@color/background"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:text="Price"
+        android:textColor="@android:color/white"/>
+
+</LinearLayout>

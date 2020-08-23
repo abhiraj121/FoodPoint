@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/background"
+    android:padding="10dp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/items_imgView"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:background="@color/login_background"
+        android:contentDescription="img" />
+
+    <LinearLayout
+        android:layout_marginLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/items_name"
+                android:textSize="25sp"
+                android:textColor="@android:color/white"
+                android:text="Pizza"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:src="@drawable/save"
+                android:layout_weight="1"
+                android:id="@+id/items_save"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_weight="1"
+                android:id="@+id/items_category"
+                android:textColor="@android:color/white"
+                android:text="category"/>
+            <TextView
+                android:gravity="end"
+                android:layout_width="match_parent"
+                android:textSize="12sp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:id="@+id/items_price"
+                android:textColor="@android:color/white"
+                android:text="price"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
